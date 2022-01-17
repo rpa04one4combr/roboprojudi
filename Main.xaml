@@ -1,0 +1,225 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1181,638" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="projeto projudi" sap:VirtualizedContainerService.HintSize="242,355" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ss:SecureString" Name="projudisenha" />
+      <Variable x:TypeArguments="x:String" Name="projudiusuario" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:GetSecureCredential CredentialType="Generic" DisplayName="manter senhas seguras" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[projudisenha]" PersistanceType="Enterprise" Target="PROJUDI" Username="[projudiusuario]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </p:GetSecureCredential>
+    <Sequence DisplayName="abrir navegador e login" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="552,1173" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://projudi.tjba.jus.br/projudi/">
+        <ui:OpenBrowser.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="518,1072" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,980" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: PROJUDI - TJBA" sap:VirtualizedContainerService.HintSize="434,888" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,672" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Usuário'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[projudiusuario]">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/PaginaPrincipal.jsp" DesignTimeRectangle="1212, 247, 210, 19" ElementType="InputBox" FriendlyName="'INPUT login'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Usuário' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANYAAAAXCAYAAAB3V7E/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABzSURBVHhe7dOxDYAwAMAw/v+xL/SFMoHEwALKVFvKCTnmnEvatYqxtHWVe6wxhqSfXR5jAd8ZCwLGgoCxIGAsCBgLAsaCgLEgYCwIGAsCxoKAsSBgLAgYCwLGgoCxIGAsCLyOJelfl3ssaccqxtLWNdY6AdmeSghw8pLMAAAAAElFTkSuQmCC" InformativeScreenshot="909aa5524bce0a9e2eb60c785c6730c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="1161, 247, 48, 19" ElementType="Text" FriendlyName="'Usuário'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='user' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='user' tag='TD' type='' aaname='Usuário:' check:text='Usuário:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAXCAYAAABEQGxzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEqSURBVFhH7ZTrDYQgEISvJ6qiEmIhxD4MTZhQAy3swfJw4Tg9jGeI4cckusAyn4y8jDHwJA2g3jWAetcA6l0ESIFgDMRCJ2iQvKydle/FJlUZI1oEMCZA1cZ+0G1Aarrqw+zrJiANeq3Vr1cb0CqB2zkMxUEGk3rmwLgEHdbl7yFqaR2JU4iXdPNjvzJy2Z4M+Kx9Pa4n+zo1AbnY1P6BfSAq3y+ZQvMVkwmo9OTfs/mF2k4oGCjNHgHhu1sXlAMVFwCtVcax187FQoAK819rm8FY3wVCUzGetRP6G1CIFP36mN9iwyA3NxrLAGLmM6DYoxHoI2JNkXPyG27x2H58JwROY9SI3wjrFkRlJ0Z7chCTHbPPeLqHQFbnL4VnaAD1rgHUuwZQ3zLwBuPfyRkrWfQpAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  senha'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[projudisenha]">
+                          <ui:TypeSecureText.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2f71b7d-3e8a-4758-ab38-de8b7a084603" InformativeScreenshot="b64bda325dc0cfbed0015f7027dbb393" Selector="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:TypeSecureText.Target>
+                        </ui:TypeSecureText>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/PaginaPrincipal.jsp" DesignTimeRectangle="1212, 297, 85, 20" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl aaname='entrar' parentid='formLogin' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl aaname='entrar' parentid='formLogin' tag='IMG' type='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAYCAYAAACRD1FmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAoUSURBVGhD7Vj5b1TnFe2f0CbYs77Zx2ODccwWIZYkTapWESEFXBMggUDjUKRGSqus0NAkJQIDDoSw2B6wx579zZsZG2wwi1nchjYsDaHsGChkUSSk0kppFakqOj33Gw9MgVZKGZB/8A9XM+99+/nOPffe951r165hyO6tDYF8H+wGyIbNpixF0+02JAtMnuV9ympVlrbbYdCSNqtqTzsdqt3QnEhqLsRsDiRs7MP2DpsZHeZSdJos6LRwLv5POS2IOk1oszyILl8ZEiVWZOxu6CYNabMbWbOLZkOWc6QcDsTVXBo6rHZ0lJRgq9Wi9mE4nUhoFsQdZmVJjWtZaRaL2nPMYUfYqSHKOXSbC2mLmBOGlfu0c4+axl+eY+CMxba7BlmeBeQELaVxozy4rkAhWATasBMwO4GwEtTSYdhKkDImeWY/AhPRShC2lUIncFnNjaTFjoTZjrTNQ3Mjw7nSnLfdVIoEQcq4PUiYTJyjFF18n7LauLYNcbuF7QK0hSBbkOH8WQvXkf1xn3ECKWCmePFpgpu2OrgHeb4J8KABWZib73MryLk+ObB12TwZm7KYCZYZKbuJ70w8HFlodxGEgbEuG0KmB9BVVobwgyUcS6b6fIgRgCgBjjusiDutZCOBdDnQRoaGLSZ0kJkZrpWgZxhko0EvilpNBJOgc32DYzO8sKxFUyb/ZW0xtXfuN02iZMQT1N5pmvUGMMW0uwY5Lxd5kFM8pCF9ybCk2UxZIHDCVHFjAqaTSTpdNUFJ0AmO7qG7uggmXTvrdCmgomRiO+eL0s2jdP2wrUSBHSFbM+U+9tfYv1R5Q9ZOVto4n6zP/jnXzzE0zYvKEtwOAZv7EVBTQgLOY/DiM7ywLOcQ1su7JK0QnGJZUUDO95NfYa5BwNQcIhMESXeY6MomxMiUrK+Cru8k4/xkpRMtPGi7nWOUrJBpXg1bTN+F7qVu+tyUHXoC5xDJMBwa2ig5ungK2ZzlGtsoMQaZGuGzTqbnAJbYIL9yDmEnpURpdk63E5zP4Jo5kHOWppfJO9mznKOY9q1BVhsf0ORb+8mvAJxzQbbJhjVhcSlZZkGMLt1s1hDyjsAmdwAb3D40E8x2nwtJtiXIKAFCmBzm2Ih4iKVEmQSvVoIR93rQTm9JCaBcK2WhVDCYxbl2nOBLIBNvUTqrpCM3Z4RBNuyyMgBKIJS9CbNtaq8Cdg5k0+ABWbUPAP0f/QhKnunSppPVunUY+1AyyKYo5WCjpwzfbGgCuruBrk6g08D19+vRzPaYy4l2SkzG56c0uCgLXrKTl0BQggEP9s2Yiq+X/waNfg+a6RUhrhV3eAmml5kHL4kAx5nZxDSHupQox8VEZqjp7dT+NspMG/cQkaDMoGpYGZhV8BMJ4V4lbgwGkAvlIt9PZRVsE11U2qjaGHj4LiNSwMxCJ+tCBKDBGwB27QEOf4zkgrnYMWcmeqb8CI1eJ4Juyoe/DOspAcGySjR6yrHJ6cEGnxcrh3PcTl7Mgb1YUe7HOtqmAPt6y7DR7UeLh+Z0Ywuzj6DHjUZKzSZaE63Rxzn8Pqz3+2kBNHHeNkcAMbufF8OMhhIjQU+ykkJwimX/F8hKO/OMLegnWpmgi4qrqkguKRQDWYruKKlWyOFBQ8VIgrwX1/f24vWqkXi/vALryLwtIyoQe3QSGd6FKxvJ9F37Cep+fLZqLd6trMYXzZuBM2eB8/1s243I1Kexs+4FYP8+XFz/IdDTg6v19WidNBH/bGXf3h6O346v28IIPTUNPYteAvbs49yNHN+Lq++uQIuvEq1MFRNOegL3kKTm69x7Hpxi2bcGWR/Q27zJc74YEYATdFOdET5D95U0TdIj5Y4MTm1069XlBHnHLuDkSZxuaMBf31uJ7snfxzqyb/PkiUD/OeDoJ0i99Ev8a08f8NmXaK6pRWPNM8AfDgPHPkX7vHlYMX48+t54DfjiInDpLP4SbMbpxYsRevIHOPrOEjQ/W4tti1/nxfTj79292L30Pc71FXDhAq5sWI9Lby5BkF7Q5qB8MEjGpdhRHjkIQFbBpgBo6VeYwsWpabJRgyCLCeBiaQanqKMMawNVwNbtwJ+O4/yaNbj662XomvAYPqCbrxxeThDO4eOV9Xhj3HhE5v8UuHwJoefm4O0xDwN7D5CNu/Eq+60aNxrZebPYfgrGzxdgdRklxOvFsgo3lj8yBrveeRN/DNIjTp7HP3oPonHeQuDzr7B1YR0+HFuNDcwwIsw0Um7ul1VnwjlQLQ4GTb4TyIX9BGSpwHJpVA7kFF1RqqyI5qOWilxQk/ftxls87OpAOdYxwG0aUYnl1FicPYVT6z7AayOrEVcgX0Csbj6WVo2ilOzk2J14a/RDeLvCD2N2DXDlNLV9Nloqq9Dk9iI1/UkCe4jzHMeRLZSNk/345uAnCC56Gbh4GVle2Co3L97vRtz0Pe5tGPf7ALW5hJoswW+wgyx6zGieVCkSmcxCIcUAaIg+s1QOM2NYw8CD3T243teDl0cHsHxMJeoDPqxiYGqoIsvJ8AvrN2LJ8FHQn11AYPoRnv88QR5Nnf0tcPwEXqkcjl+RzdsX8hL6TyPz/FystXvR5B2OSw31vJhzePXxx7Bo0mT87fdHcO3gETS88DMy+UtsnTuX+l+JEKvLbQx4ho05PfdtsDpNs2iRgJ0Hp1hWFJBvygWNbFBRWhUDZLAqMnIWZfRvLKckMCDh1FH+ZpjCJWgpdE2ZghVeH0E8hsurVmNFWRX2zCGIJ06gk8AsC1Sif+kyMvMM0NeHw6/8AslpU8nYM9g+cxYzk3I0uwI4UPciJYfB8dgx4NAR4M+fU+M/RUtdHS/sInbMfAaNzFjSdg+6NQ/PI8y1o5NZRto0SED+X4FPuRpLaFVGM5tQ3y94AInaCVqEeXDQ4UTP40+gr2YG9tdMx8FZP8G+p59CdNRYbB4xEr210xAZPxZhgpqsqMahGTWIkOGtgRHYyJy4+4kfcmwN9EcnIDphHD6qrUWsqhpRj4/Zi0ulf8mJj+B3c57Djqk/RmLCZHw0ew6axlRjT+10tD80kvmyG9vcZUgOk0qQGRGDday0FB2Utfy5i2l3BFkWKlysEOTCFO7WfvLdIsPqKs3CQt5Lviz6HKNLyneHMPtECHKclV4bc2YpDEIsNlr420pdlgsIeh0I+ajfkpmQaREyLUlQIpQeKSJiHNvu8aCJsrTZxSqQwMicMWp/VC6UGUPY6UOQ7h+jZ4TM8g2Ec7IQCXkcaCWgSY6PDjOjQ+YTgsjHJlVBMhAWnKdYdhvIeeCk7LzTgBvt/6Vf7gOMpG3yLK6XK1RyRtZQNpQRFPn8eNNYpdHko5BUa1Ig3PAEZQPjaNJf+oipT5h8l++X6yPpWG4NVWjwvaRneZNniRViuXEFZxv4X0y7DeQ7dRqyu7MhkO+DDYF8H+w2kIfs3tkQyPfcruHfH02v7owjQq4AAAAASUVORK5CYII=" InformativeScreenshot="bb1d3c3b4ba57eb85c21a3a10e211c52.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVFhH7ZbZjtowFIZ5pL5gq2HfAmHf9+2FuOlcTMUNKgikSEhlhzP+kzhkgidwRr1rLf1KcoG/z8Y+duB/U7XxeEzIaDSi4XBIg8GA+v0B9fp96vV61O12qdPpULvdoVa7Tc1WixrNJjUaTarXG9TudIxSqfTN7o7fAL9cLnc5u3P25kzX65UmkwnNZjNIfV0CIwfwdDrRETnKHOkgc7Cee/G0cjAlILDZbOjt7RfVGw1D/4oEpl0l4MDx7iNgGAat12v6+fpK1Vrd0HWdJ4H/HAImXCUAuAO+F1itVrRcLmk+n9N0OqVKpWrYXT/XsOAcARt+N/0usFdA07QPyRUKZHf9XMNqNwUcuM/0728CeF+Ikf9eyCzEbKwpl88zBcRWkwI3sAtuAt2BhCWwc2e3F+voTHqOKYB9jq32EC4gjgDe3fD93hHI6jmeAIqMJYAZuIHNCJnbqOXTC7cEtrZAJqvzBFDhUFzUYHxLuC0ggKrRSwEtm+UJoLyaM+ABmwHM+VbBLQHApUA6k+EJoLZjBu7AiAT7wOXoHQGNKYCDBXvagbhFGHApkEprTAFxqn2cARvqCxfxwC2BEyVTaZ4AjlRnBjxQJVgxchlU00QqxROo1euWgOjcH4x8Dt9ud6ZAPMkUqNZqdBICaqA7/vA/tkAskeQJVKrVBwIW+BHcEYgneALlildAwGQE4FMw4oJLgWgszhQoV8ztI2EPoXbcYLdAJBbjCZTKZVNABVFGAZaBQDjKFCiWSs8JKIDeQCAUifIECkU/gd1TYBkIBMMRnkC+UDQrmIRxgN6YAqEwTwB3OPxQ1SE36OeFLSDucPjh38qPYIgngDscrlG4yeAygfMcRypONRwsqO0or6hwKDLY59hqWO1YcPjPMe0YOeDfX4I8gX+oBQLvEwJiQgPuVJwAAAAASUVORK5CYII=" InformativeScreenshot="ecb9e5742a4edd65114578a3bd848549.png" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA'/&gt;" Url="https://projudi.tjba.jus.br/projudi/" />
+                  </uix:NApplicationCard.TargetApp>
+                </uix:NApplicationCard>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenBrowser.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:OpenBrowser>
+    </Sequence>
+    <Sequence DisplayName="clicar em buscar " sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: PROJUDI - TJBA" sap:VirtualizedContainerService.HintSize="434,682" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,466" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Buscas'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/advogado/CentroAdvogado" DesignTimeRectangle="773, 176, 32, 13" FriendlyName="'Buscas'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='Stm0p0i8eTX' tag='FONT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='Stm0p0i8eTX' tag='FONT' type='' aaname='Buscas' check:text='Buscas' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAARCAYAAAC1tw6GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVEhL7ZLNDYMwDIWzIJWYx2KRCrEHQswBYgikdgE3OHH60takJ8SBw5OM45/PNu7xXPlMuoBKuoBKSkADOXYOVN95gcCjlAHdujk+zNzWjpsxDz5CBlDPjau4nbw9EmwL/GLrRtUXBtEty0Bb/j9xkcM+GfUhyACS+BRzF9/SVbun1pwsbvK5FtB7Q9DQAJKi2XTWmXGTUNPb2E9lAknDHSDMC2C/gIJP66aa8V2Hwr67P7V8yzTEw+YXW08WfbAZgctOhpDBDiejNNTnIsr/kBYSH32dTJQgINZLQOJ5tkEagq1rrg4blYDOoguopJMBrfwCAnMsqNcFPysAAAAASUVORK5CYII=" InformativeScreenshot="e9921b809ed663a7ca27936c0403f041.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Buscar Qualquer Processo'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/advogado/CentroAdvogado" DesignTimeRectangle="786, 217, 150, 19" FriendlyName="'Buscar Qualquer Processo'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='Stm0p10i1eTB' tag='TABLE' /&gt;&lt;webctrl id='Stm0p10i1eMTD' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='Stm0p10i1eTB' tag='TABLE' /&gt;&lt;webctrl id='Stm0p10i1eMTD' tag='TD' type='' aaname='' check:text='Buscar Qualquer Processo' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAXCAYAAADz0VYRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALlSURBVGhD7Vs7chsxDN1D+AJbuFCpcZqt3KpWowO4UJkD+BK+QY5KkwAfCUIkvXKWmygBZt6MCAIgPo+UXHhyJiY7iBHNZBeZXn/+cgbDKECMaIahgBjRDEMBMaIZhgJiRDMMBeS/ItpyenHT8l7dM4wBpE60t6t7miY3CcyXit1ueHezyOXp9FGx+Rq7Eu1yLvo3PV/dUrP7xwHpEO3sjliHpv2xRjHJMtE/3OH5e2TbnWipZ9/P+dEBWUW0PCBuGIYuB0efcXsxTHmrqensr+2Oix/CcqZXVA+D4mqSpyGuzCfWIvf1K8n6drzbWpDH2c2hpmaOvE6xbnxkT8TlLvJ7cYe3O3S1XKWdznUgICu/OlFUYxBkL2xOYThcWH6JFIRPIFqreNpL5IhIF6FDjAS2CQSW+0TuSOqsb8ULtYAEwoYGiroVCqLlHLSPrI/Oiz61uoNO51bYXa4+btn34ynEE+fHODr2KEDWfXUmUvQG4ZOXZCkanUE+isChcP2SAdWmrCEa2eAcTbSQbx521jfiyRdCxGvVSNA+yKvwKc/LdZX5MWKPJXycH7GfKUaMefs6ini9vDcGZB3RUqKdwSY/bsBSK4aaj7i5+B7R6IxaHNK18uGhQI/45f6dRKsNpjewVT73Ek3rMuhCFoTjHnC/lW8v740BWf/HAK25MUwK/kyD8PYziIIiIuly4WIvxfyaaGhY3pfrRj5FY7O9JhRi1vVlfUUtfn0In3sDa+0pvXyxKQ/ak7XAV+v82v9EOfrftjwn3p8vvl7YpDnyHuqVZ44G5M7faB5EENbNCwbEw4R9Gkiy9ZANDGvfIJChT7SAMn5hW80nDo30/pwYPxNK+kXc6Mt42p5qDLrfJFoiEMUVl7uoubw0KQ+fW67TQ/fYI/dK+LZyHgBInWh/LUKzBOk3QkFAw6aAPBjR5Eu1HeGMaOMAeTiiGR4LECOaYSggRjTDUEDsfwZMdhEjmskO4twnZCeb5fGFKkYAAAAASUVORK5CYII=" InformativeScreenshot="9a1c9fb0fead445ff52af796b824db9b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVFhH7ZbZjtowFIZ5pL5gq2HfAmHf9+2FuOlcTMUNKgikSEhlhzP+kzhkgidwRr1rLf1KcoG/z8Y+duB/U7XxeEzIaDSi4XBIg8GA+v0B9fp96vV61O12qdPpULvdoVa7Tc1WixrNJjUaTarXG9TudIxSqfTN7o7fAL9cLnc5u3P25kzX65UmkwnNZjNIfV0CIwfwdDrRETnKHOkgc7Cee/G0cjAlILDZbOjt7RfVGw1D/4oEpl0l4MDx7iNgGAat12v6+fpK1Vrd0HWdJ4H/HAImXCUAuAO+F1itVrRcLmk+n9N0OqVKpWrYXT/XsOAcARt+N/0usFdA07QPyRUKZHf9XMNqNwUcuM/0728CeF+Ikf9eyCzEbKwpl88zBcRWkwI3sAtuAt2BhCWwc2e3F+voTHqOKYB9jq32EC4gjgDe3fD93hHI6jmeAIqMJYAZuIHNCJnbqOXTC7cEtrZAJqvzBFDhUFzUYHxLuC0ggKrRSwEtm+UJoLyaM+ABmwHM+VbBLQHApUA6k+EJoLZjBu7AiAT7wOXoHQGNKYCDBXvagbhFGHApkEprTAFxqn2cARvqCxfxwC2BEyVTaZ4AjlRnBjxQJVgxchlU00QqxROo1euWgOjcH4x8Dt9ud6ZAPMkUqNZqdBICaqA7/vA/tkAskeQJVKrVBwIW+BHcEYgneALlildAwGQE4FMw4oJLgWgszhQoV8ztI2EPoXbcYLdAJBbjCZTKZVNABVFGAZaBQDjKFCiWSs8JKIDeQCAUifIECkU/gd1TYBkIBMMRnkC+UDQrmIRxgN6YAqEwTwB3OPxQ1SE36OeFLSDucPjh38qPYIgngDscrlG4yeAygfMcRypONRwsqO0or6hwKDLY59hqWO1YcPjPMe0YOeDfX4I8gX+oBQLvEwJiQgPuVJwAAAAASUVORK5CYII=" InformativeScreenshot="bbb89e184ad8606aa189c99ac598bdac.png" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA'/&gt;" Url="https://projudi.tjba.jus.br/projudi/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

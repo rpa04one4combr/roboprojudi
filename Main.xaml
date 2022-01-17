@@ -278,7 +278,7 @@
         </ui:ForEach.Body>
       </ui:ForEach>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="peticionar processo" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="peticionar o processo" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

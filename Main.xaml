@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1181,638" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1181,638" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="72">
+    <scg:List x:TypeArguments="x:String" Capacity="43">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -42,10 +42,12 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -72,6 +74,15 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -79,10 +90,11 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="projudi" sap:VirtualizedContainerService.HintSize="242,355" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="projudi" sap:VirtualizedContainerService.HintSize="242,552" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="projudisenha" />
       <Variable x:TypeArguments="x:String" Name="projudiusuario" />
+      <Variable x:TypeArguments="x:String" Name="númerodoprocesso" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -221,5 +233,90 @@
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
     </Sequence>
+    <Sequence DisplayName="extrair nº do processo" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:String[]" Name="arrayFicheiros" />
+        <Variable x:TypeArguments="x:String" Name="strTexto" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="412,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[arrayFicheiros]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(Environment.CurrentDirectory+"\pdf projudi")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,385" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrayFicheiros]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="ficheiro" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[ficheiro]" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[strTexto]" />
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[númerodoprocesso]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[system.text.RegularExpressions.Regex.Match(strTexto, "(?&lt;=Processo nº\s)(\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4})").Value]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="peticionar processo" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,732" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT numeroProcesso'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[númerodoprocesso]">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/buscas/ProcessosQualquerAdvogado" DesignTimeRectangle="583, 249, 231, 16" ElementType="InputBox" FriendlyName="'INPUT numeroProcesso'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Número Processo' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAUCAYAAABszsoZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF/SURBVHhe7dvLasJAGIbhXoJLvaJuegWuSiEi0kUvVbrprmIrSNEW4znm8Ndv6ARDLG0XTSK8Pzwbx2T3MlEmV/N5bACaL491sUgsijLLMmMYpuZRh+pRXRZi1QdpmtpwOLRut2udTsdarRaAGqg/dage1aUP1sWqgrXQbrfPXgygeupRXarPPFZtuSpZXwiCW+sH17ZaTW29frPNZm7b7YftdgsAFZhMnq3fD1yP6lJ95rFq/KPvaPRoD/c3X5G+234fOofDBkBFptMX16O61BRi1YKE4auLVaFG0bJwgzjeA6iIb1JzNlY9/irW091UFyZJBKBCP8aq36mnsfpQs+ODM4Dq/DpWv6umqf6A0sVJ4UYA/tefYmVXBepDrMCFIFbgQhArcCG+jdUfihiPn4gVqNlsNnM9lg5FHNfy44a93p07bkisQD0U6mAwcD2WjhtykB9oHu2qpYP8vCIHNIf6U4fqsfSKnA9WBWvLZRim3lGH6tGHWogVQJPF9gkNVNv0d7DG7AAAAABJRU5ErkJggg==" InformativeScreenshot="ba65a3e95799627183fe1380c9b6572c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Buscar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/buscas/ProcessosQualquerAdvogado" DesignTimeRectangle="912, 823, 62, 23" ElementType="InputBox" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='image' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='image' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAbCAYAAADI1VnXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVFhH7ZYxasNAEEV1EJ/AJ/ANfAKfwCfwDXwCn8AnUJMqhVMolTEEQSo1aVKYNMEQMLiJiw1P7LcVZVdkwYIQzcBH1szszs7bXeHscDg709llRVE4U3EFUZblIBUEkY9Gg5KB8DIQXgbCy0B49QricTZz1WoVjP01JYOgubfNxr3vdrXuJ5NgHtrO5w4LxW6hp8Wis36KkkBQ9PN4dK95Xu80z7vxOJiLgNYnCIwaoViqkkCosYfp9JufnXlZry/v/ManfKBxegCnHeS0CKhijNFpI675qEccv64aNbCPqrrUDuUxD3GeTX9bSSAQhbFmU2pGOSooEDTIQhh72u/rHN6bMU4a4xgDDN7J48TpFBJjPHPTNPa8XNa/Y3maW/PfDAQFmUyTA4P3LhDyq3n87Vhzkc0YjWKMxa8dJ4bh68rTXF1XGCWDkJhY1FNBsIPtWAwEPkx1EKeIGEZuV167TkxJINh9EecJCIppN4CDuAIsRItgHH6OvK5Ge4ExELoC7LBydSU5kRoTy+sFhHYUYxH6SKl5jEb1AdMi8GH4WTBjfgsCCbpMddkEjLXE8noB8Z9lILwMhJeB8DIQXgbCy0B4RUEMUT9ADF1Z/Rds8ObcF5qPdk1AyD/7AAAAAElFTkSuQmCC" InformativeScreenshot="e5d29a80056f1090dcd029c4c4769176.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Peticionar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/buscas/ProcessosQualquerAdvogado" DesignTimeRectangle="1772, 371, 49, 12" ElementType="Text" FriendlyName="'Peticionar'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='Peticionar  ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname='Peticionar  ' tag='A' type='' check:text='Peticionar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAAQCAYAAAC2hzf1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVEhL7VMxDoMwDOxDeArfqdTnIJ7BQtWhW3YGWHlCJdi6dnFtxyFOIRSJqlKjnhQp9bmOz2cOkCD+on4FiYu61XDJMqiCU0IvdAzD+QhV0eJthOaUgelsfI53/OfwIuoIzU1+I/oChXHDcWzJ+TZWRUFXQnWqYaB74KQ4SLzETBc6wWInjiIhzw4LfzmPNsjvlWAwjzn3NkLX8xvUgsGeTUG1/FZtdMr+2XF+5XSOaprFyiNcl+4RnmvruHtHxfHeyzDC4dicaSiCbd/UCrckSov2iPNUgxsLxOrmLbRbWpTOIayvn8M07Tm+IkqGah3RYveIerGZm5J9XxI1Xz+qG+F1Y6uidD0nZJcohBTTq0dggVxYT9DH6cwnvMQjoutn75yPw2ycs29FJQQW9bjfp6n96rnmOQsipOtUWgB4Ag71vBkvkoQ7AAAAAElFTkSuQmCC" InformativeScreenshot="1949d9027c4f307f65cd990d23b072de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVFhH7ZbZjtowFIZ5pL5gq2HfAmHf9+2FuOlcTMUNKgikSEhlhzP+kzhkgidwRr1rLf1KcoG/z8Y+duB/U7XxeEzIaDSi4XBIg8GA+v0B9fp96vV61O12qdPpULvdoVa7Tc1WixrNJjUaTarXG9TudIxSqfTN7o7fAL9cLnc5u3P25kzX65UmkwnNZjNIfV0CIwfwdDrRETnKHOkgc7Cee/G0cjAlILDZbOjt7RfVGw1D/4oEpl0l4MDx7iNgGAat12v6+fpK1Vrd0HWdJ4H/HAImXCUAuAO+F1itVrRcLmk+n9N0OqVKpWrYXT/XsOAcARt+N/0usFdA07QPyRUKZHf9XMNqNwUcuM/0728CeF+Ikf9eyCzEbKwpl88zBcRWkwI3sAtuAt2BhCWwc2e3F+voTHqOKYB9jq32EC4gjgDe3fD93hHI6jmeAIqMJYAZuIHNCJnbqOXTC7cEtrZAJqvzBFDhUFzUYHxLuC0ggKrRSwEtm+UJoLyaM+ABmwHM+VbBLQHApUA6k+EJoLZjBu7AiAT7wOXoHQGNKYCDBXvagbhFGHApkEprTAFxqn2cARvqCxfxwC2BEyVTaZ4AjlRnBjxQJVgxchlU00QqxROo1euWgOjcH4x8Dt9ud6ZAPMkUqNZqdBICaqA7/vA/tkAskeQJVKrVBwIW+BHcEYgneALlildAwGQE4FMw4oJLgWgszhQoV8ztI2EPoXbcYLdAJBbjCZTKZVNABVFGAZaBQDjKFCiWSs8JKIDeQCAUifIECkU/gd1TYBkIBMMRnkC+UDQrmIRxgN6YAqEwTwB3OPxQ1SE36OeFLSDucPjh38qPYIgngDscrlG4yeAygfMcRypONRwsqO0or6hwKDLY59hqWO1YcPjPMe0YOeDfX4I8gX+oBQLvEwJiQgPuVJwAAAAASUVORK5CYII=" InformativeScreenshot="9ea1fa6c9231795cfc8d06168e7c8d9c.png" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA'/&gt;" Url="https://projudi.tjba.jus.br/projudi/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>

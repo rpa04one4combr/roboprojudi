@@ -67,6 +67,25 @@
     },
     {
       "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.4.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\torre\\.nuget\\packages\\bitmiracle.docotic.pdf/7.5.11645\\lib/net46/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.ocr.contracts/2.9.1\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.Telemetry.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1"
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "21.4.1"
       },
@@ -155,22 +174,104 @@
     },
     {
       "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.4.1"
+        "Id": "UiPath.OmniPage.Bundle.Extended",
+        "Version": "1.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\torre\\.nuget\\packages\\bitmiracle.docotic.pdf/7.5.11645\\lib/net46/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.ocr.contracts/2.9.1\\lib/net461/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities/3.4.1\\lib/net461/UiPath.PDF.Telemetry.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll"
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/AppHelper.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/AppProductConfig.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/AppUtils.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Asian.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/atm2lll.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Bnt.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/CRX.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Defaults.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Firewrx.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/FireWrx2.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/FireWrx3.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/FireWrx4.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/FireWrx5.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/FireWrx6.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Formatter.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/hybridmodule.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/ICDLLW32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/ICHUNW32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Icr2.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/IF_PNG.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/jp2k_kdu_apps_vnew.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/kdu_vnewR.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/KernelAPI.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/LecsoMgr.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/LEditor.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/LMQuery.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/MiddleEarth.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Mor.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Mor2.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Mor3.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Mor4.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Mor5.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Mor6.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/MorIF.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/msvcp140.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/mytoolbox.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Nuance.OmniPage.CSDK.ArgTypes.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Nuance.OmniPage.CSDK.CAPI.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Nuance.OmniPage.CSDK.Objects.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/pccext.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/pccext2.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/pccext3.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/pccext4.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/pccext5.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/pccext6.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/PreRendering.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/RecAPIPlus.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/RecDiag.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/RecoCore.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/RecPDFNet.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Rendering.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/Rendering2.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/rndsdawg.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/rndsinso.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/SkinnedClasses.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/SkinnedWindows.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/SPDFLib.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/THOCRAPI.DLL",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWBIG532.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcut.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcutchr.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcutckr.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcutla.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcutle.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcutlin.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twcutlkr.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWForm.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWGB32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twiden.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twksc32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWLAY32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twlay32a.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWLAYKR.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/tworient.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twpost32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twpostk.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twrecc.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twrece.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twrecj.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twreck.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twrecs.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWReverse.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/TWSJIS32.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/twstruct.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/UiPath.OmniPage.Bundle.Extended.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/xocr.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/xocr2.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/xocr3.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/xocr4.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/xocr5.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended/1.0.2\\lib/net452/xocr6.dll"
       ],
-      "Path": "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1"
+      "Path": "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended\\1.0.2"
     }
   ],
   "Conflicts": [],
@@ -895,6 +996,11 @@
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
       "Version": "2.9.1",
+      "Dependencies": []
+    },
+    "UiPath.OmniPage.Bundle.Extended": {
+      "Id": "UiPath.OmniPage.Bundle.Extended",
+      "Version": "1.0.2",
       "Dependencies": []
     },
     "UiPath.PDF.Activities": {
@@ -1689,14 +1795,26 @@
     },
     {
       "Package": {
+        "Id": "UiPath.OmniPage.Bundle.Extended",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended\\1.0.2\\lib\\net452\\Nuance.OmniPage.CSDK.ArgTypes.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended\\1.0.2\\lib\\net452\\Nuance.OmniPage.CSDK.CAPI.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended\\1.0.2\\lib\\net452\\Nuance.OmniPage.CSDK.Objects.dll"
+      ],
+      "Path": "C:\\Users\\torre\\.nuget\\packages\\uipath.omnipage.bundle.extended\\1.0.2"
+    },
+    {
+      "Package": {
         "Id": "UiPath.PDF.Activities",
         "Version": "3.4.1"
       },
       "Assemblies": [
         "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1\\lib\\net461\\UiPath.PDF.Activities.Design.dll",
         "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1\\lib\\net461\\UiPath.PDF.Activities.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1\\lib\\net461\\UiPath.PDF.dll",
-        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1\\lib\\net461\\UiPath.PDF.Telemetry.dll"
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1\\lib\\net461\\UiPath.PDF.Telemetry.dll",
+        "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1\\lib\\net461\\UiPath.PDF.dll"
       ],
       "Path": "C:\\Users\\torre\\.nuget\\packages\\uipath.pdf.activities\\3.4.1"
     },

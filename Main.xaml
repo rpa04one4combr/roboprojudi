@@ -97,14 +97,13 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="projudi" sap:VirtualizedContainerService.HintSize="702,1090" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="projudi" sap:VirtualizedContainerService.HintSize="676,1893" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="projudisenha" />
       <Variable x:TypeArguments="x:String" Name="projudiusuario" />
       <Variable x:TypeArguments="x:String" Name="númerodoprocesso" />
       <Variable x:TypeArguments="x:Boolean" Name="NextStep" />
       <Variable x:TypeArguments="x:String" Name="SystemException" />
-      <Variable x:TypeArguments="ui:Browser" Name="navegador" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -112,7 +111,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:GetSecureCredential CredentialType="Generic" DisplayName="manter senhas seguras" sap:VirtualizedContainerService.HintSize="660,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[projudisenha]" PersistanceType="Enterprise" Target="PROJUDI" Username="[projudiusuario]">
+    <p:GetSecureCredential CredentialType="Generic" DisplayName="manter senhas seguras" sap:VirtualizedContainerService.HintSize="634,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[projudisenha]" PersistanceType="Enterprise" Target="PROJUDI" Username="[projudiusuario]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -120,7 +119,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </p:GetSecureCredential>
-    <Flowchart DisplayName="Flowchart1" sap:VirtualizedContainerService.HintSize="660,907" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart DisplayName="Flowchart1" sap:VirtualizedContainerService.HintSize="644,1993" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -128,14 +127,14 @@
           <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
           <av:Size x:Key="ShapeSize">60,75</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">270,40 100,40 100,107</av:PointCollection>
-          <x:Double x:Key="Width">626.5</x:Double>
-          <x:Double x:Key="Height">870.56</x:Double>
+          <x:Double x:Key="Width">610</x:Double>
+          <x:Double x:Key="Height">1957</x:Double>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID4</x:Reference>
+        <x:Reference>__ReferenceID9</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID4">
+      <FlowStep x:Name="__ReferenceID9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">0,107</av:Point>
@@ -150,7 +149,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
+          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="590,51" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -158,7 +157,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:KillProcess>
-          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign sap:VirtualizedContainerService.HintSize="590,60" sap2010:WorkflowViewState.IdRef="Assign_3">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
             </Assign.To>
@@ -166,15 +165,15 @@
               <InArgument x:TypeArguments="x:Boolean">False</InArgument>
             </Assign.Value>
           </Assign>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="590,843" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="552,616" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[navegador]" Url="https://projudi.tjba.jus.br/projudi/">
+              <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="552,616" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://projudi.tjba.jus.br/projudi/">
                 <ui:OpenBrowser.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -282,7 +281,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign sap:VirtualizedContainerService.HintSize="472,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
                 </Assign.To>
@@ -290,10 +289,10 @@
                   <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                 </Assign.Value>
               </Assign>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,1216" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -427,7 +426,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign sap:VirtualizedContainerService.HintSize="472,60" sap2010:WorkflowViewState.IdRef="Assign_9">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
                     </Assign.To>
@@ -435,7 +434,7 @@
                       <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,514" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,1010" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -482,10 +481,10 @@
                       </uix:NApplicationCard>
                     </TryCatch.Try>
                     <TryCatch.Catches>
-                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -493,7 +492,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                           </ActivityAction.Argument>
-                          <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_27">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -535,7 +534,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_12">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
                         </Assign.To>
@@ -543,7 +542,7 @@
                           <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="s:String[]">[arrayFicheiros]</OutArgument>
                         </Assign.To>
@@ -551,10 +550,10 @@
                           <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(Environment.CurrentDirectory+"\pdf projudi")]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,514" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -594,10 +593,10 @@
                           </ui:ForEach>
                         </TryCatch.Try>
                         <TryCatch.Catches>
-                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="416,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -605,7 +604,7 @@
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                               </ActivityAction.Argument>
-                              <Sequence sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                              <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -632,6 +631,7 @@
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">0,757</av:Point>
                             <av:Size x:Key="ShapeSize">200,66</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">100,823 100,957</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <Sequence DisplayName="peticionar processo" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_29">
@@ -640,7 +640,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                          <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
                             </Assign.To>
@@ -648,10 +648,10 @@
                               <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,514" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -706,10 +706,10 @@
                               </uix:NApplicationCard>
                             </TryCatch.Try>
                             <TryCatch.Catches>
-                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -717,7 +717,7 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                   </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -739,6 +739,514 @@
                             </TryCatch.Catches>
                           </TryCatch>
                         </Sequence>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">0,957</av:Point>
+                                <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">100,1023 100,1127</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="adicionar documento" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <TryCatch.Try>
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: PROJUDI - TJBA" sap:VirtualizedContainerService.HintSize="434,577" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="Simulate" Version="V1">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,361" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/movimentacao/Peticionar?numeroProcesso=3220213594347&amp;ehPeticionar=s" DesignTimeRectangle="438, 776, 108, 23" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='Anex' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='Anex' tag='IMG' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAbCAYAAACk0wvSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPqSURBVGhD7ZlLS+tAFMfzlVLIZ0m7SdZ350YES3cJtzt1W9J9+xG8le5zKYgi0lvpRlyItfh2ocK5c+bVmXSatJdeTWUG/pCcOTmv3wyCdcCujV4W4IYvDeD+/j7s7OzA1taWVQmFbJCRuiTAn80mHBwcwPX1NXx8fFiVUMgGGSErsSTA7e1tuLm5gbe3N3h8fLQqoZANMkJWYkmAeEWRsulDq/IIGSErsTSA7+/v8PDwYFViIaNcgPf391YlViHAu7s7qxIrFyD+kZxOp99Sk8nk02TKvy4ho9UAdkPwPA+8eDC/N+1C6DgQdsnzIAbP8SAeZH24ivbXKZrLAUdR0PncQa+ibhhC12A3qRDg7e2tpt+RB0EUgRd0NDsLyAAGHdVWAlGAIXQErJTUTw5PlOoAv0o4K/neCcgBC2it6nwXqRCgmmgySSEity9KOxDwJMymn+75GziAWPrw05W5gd1QiRF22eDJbXeIjye+9WIYyG+Fvx6P+WZOcBYgr9mLUvreCUQsInIwVR9m570qw51McAbsJqfkUMvv8WBE6Kd8p8byIkhlLLU3tM/nNNc2Uy7A19dXGI/HitpQc2rQHvehUalAo09s7RoJjrYxjHp1qJBEtTZ7dh0X6r0R9OouOG4deqMRJL4Dbr2n7Y8Sn8TwISH7o1ECPolBfaid+3C7n+CzUA/qLrfReNl9pnG/QfZ8WiP2gTZZx4LcxpoNvpgv6+v4yfw+tWVjGXpTcqizZbN3oNLoKzzGlFEuwIuLi5mSKgk4OxFu/QiOsLhqQvexkCqxVxPiezQDNGuKDZQqC5jssxiK/4KBCXCiDmqj8YSvLlYL2eN9iO8lKKU2kdtY85IAKSDlcNFYvFaqvN4UO43LZ4tKquRb5R1VCFBtQG1KNq4WotyCP79+6ICyJ3TpGzjfpGlIeQDn9pbIvbhm7kufWe4igHJWNAfXgt60HIvmImIQ5QJ8eXmB4XAotYundveQvbdY8NbwkNrVE+a3hvqQtBujDkDs8yGJGKJZU5MYm9rR1wUXa8Km1MYV0VoPd+mwZXyMg8PiPqbcQ9LXXM1qHy7JzeMUARS1s1iLD47uy/b02lqShRAyWhpgkc7Pz432ZSUGygao21S/f1FRjKI8Yv9/yZRzGRUCRCjfQTgkk30VZYdu8vls5QJ8fn6Gs7OzlaQGN+1/ldZVE4Iz2b9KyCgX4Onp6dIyJTD5Wa1PuQCfnp7g5OTEqsRCRkaA+Cvv5eUl/XfN8fGxVQmFbJCR8Rf5ZrMJe3t7cHV1RSlblU/IBhkhK7EkQFxxHFO6eEWtyidkg4zwh12xNIB2bd6yADd6AfwFPSE5btHgmEYAAAAASUVORK5CYII=" InformativeScreenshot="11847ac381df73e996444ceca7f1fe59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ZbZjtowFIZ5pD5gKw37Fghb2PfthbjpXEzFDSoIJCSkssMZ/0kcMsETOKPetZZ+JSDh77Oxjx3431RtNBoRMhwOaTAYUL/fp16vT91ej7rdLnU6HWq329RqtanZalGj2aR6o0H1eoNqtTq+W+u6/s3ujt8Av1wudzm7c/bmTNfrlcbjMU2nUwh9XQIjB/B0OtEROcoc6SBzsJ578bRyMCUgsNls6O3tF1Vrta9JYNpVAg4c7z4C6/WaVqsV/Xx9pXKlypfAfw4BE64SANwB3wssl0taLBY0m81oMpmQYZTXdtfPNSw4R8CG302/C+wV0DTtQ3KFAtldP9ew2k0BB+4z/fubAN7nYuS/5zJzMRsryuXzTAGx1aTADeyCm0B3IGEJ7NzZ7cU6OpOeYwpgn2OrPYQLiCOAdzd8v3cEsnqOJ4AiYwlgBm5gM0LmNmr59MItga0tkMnqPAFUOBQXNRifJdwWEEDV6KWAls3yBFBezRnwgM0A5nxWwS0BwKVAOpPhCaC2YwbuwIgE+8Dl6B0BjSmAgwV72oG4RRhwKZBKa0wBcap9nAEb6gsX8cAtgRMlU2meAI5UZwY8UCVYMXIZVNNEKsUTEKeYJSA69wcjn8O3250pEE8yBSrVKp2EgBrojj/8jy0QSyR5AuVK5YGABX4EdwTiCZ6AUfYKCJiMAHwKRlxwKRCNxZkCRtncPhL2EGrHDXYLRGIxnkDJMEwBFUQZBVgGAuEoU6BYKj0noAB6A4FQJMoTKBT9BHZPgWUgEAxHeAL5QtGsYBLGAXpjCoTCPAHc4fBDVYfcoJ8XtoC4w+GHfys/giGeAO5wuEbhJoPLBM5zHKk41XCwoLajvKLCochgn2OrYbVjweE/x7Rj5IB/fwnyBP6hFgi8AwRoYggdfvh1AAAAAElFTkSuQmCC" InformativeScreenshot="d9c54f068ea218ee3eb4605de3ab8cbb.png" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA'/&gt;" Url="https://projudi.tjba.jus.br/projudi/" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[SystemException]" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                            </Sequence>
+                            <FlowStep.Next>
+                              <FlowStep x:Name="__ReferenceID6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">0,1127</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">100,1193 100,1297</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Sequence DisplayName="selecionar documento" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="472,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,1555" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <TryCatch.Try>
+                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Abrir" sap:VirtualizedContainerService.HintSize="434,1328" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" Version="V1">
+                                        <uix:NApplicationCard.Body>
+                                          <ActivityAction x:TypeArguments="x:Object">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,1039" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Endereço: C:\Users\torr…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" Text="C:\Users\torre\OneDrive\Documentos\UiPath\robô projudi\pdf projudi">
+                                                <uix:NTypeInto.Target>
+                                                  <uix:TargetAnchorable DesignTimeRectangle="115, 36, 544, 30" ElementType="Toolbar" FriendlyName="'Endereço: C:\Users\torr…'" FullSelectorArgument="&lt;wnd ctrlid='1001' title='Endereço: C:\Users\torre\OneDrive\Documentos\UiPath\robô projudi*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1001' title='Endereço: C:\Users\torre\OneDrive\Documentos\UiPath\robô projudi*' check:text='Endereço: C:\Users\torre\OneDrive\Documentos\UiPath\robô projudi\pdf projudi' /&gt;" ImageBase64="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" InformativeScreenshot="fb91cd7309a3adf28e2eb65a5e04d60c.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </uix:NTypeInto.Target>
+                                              </uix:NTypeInto>
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'Barra de'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable DesignTimeRectangle="692, 36, 33, 30" ElementType="Toolbar" FriendlyName="'Barra de'" FullSelectorArgument="&lt;wnd cls='ToolbarWindow32' title='Barra de ferramentas da faixa de endereços' /&gt;" FuzzySelectorArgument="&lt;wnd cls='ToolbarWindow32' title='Barra de ferramentas da faixa de endereços' check:text='Barra de ferramentas da faixa de endereços' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVFhH7c5BCgMhDIXhOXaXHmIcPJCD3qB4DnW2KRG7bIlKOoHmhye4EL8NBCYTtT2egEspiVhDtaOj7k5R1BRFTVHUFEXtv1DneUIppd/GYkF578EYA9baKRgLqtYKx3FMw1hQ2ApsGYWfUjYC+xnKOQfXdfVX31tGfSrnDPu+D4MwFtQKCGNBhRCmQRgLCosxToEwNtRKiqKmKGqKoiYbhaA3SsIaqp3CEogCeAEvku6d4eWY8gAAAABJRU5ErkJggg==" InformativeScreenshot="66ec4ee8475be5166bde570b30464231.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'RS02 -'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable DesignTimeRectangle="204, 135, 394, 22" ElementType="Text" FriendlyName="'RS02 -'" FullSelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Modo de Exibição de Itens' cls='DirectUIHWND' /&gt;&lt;ctrl name='Modo de Exibição de Itens' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Modo de Exibição de Itens' cls='DirectUIHWND' /&gt;&lt;ctrl name='Modo de Exibição de Itens' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' role='editable text' check:text='RS02 - Contestação - Cont 0052699 - &amp;apos;0169035-08.2021.8.05.0001' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAY4AAAAaCAYAAACghLudAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVnSURBVHhe7ZoNkuMqDITnXDmQz+PT5DI5TB7ixzRYAuTs8+5m+6tK1ViAkBoBzsz8vAkhhBAHvDgIIYS44MVBCCHEBS8OQgghLnhxEEIIccGLgxBCiAteHIQQQlzw4iCEEOJCuTie7+3n5/0Dn+2Zm4TnBm1b6J0B+2N/ZaOYqx+0+3m990f19fPYg+Uv5rW/HyGPqO1zf38kjcnNmhk1YNlf++OwYy2Naqa2PapmznnXCXsBNRv5i22wHzKfx9uuIe5FSz8V15wt5noYY4d7Po4ZxLoQj9VnSQ/Lv9cuxLaJ7l+KcXH0RZ7FiYcdCBWe9/ggY4odxh/tQufXAx6yhcb3FT6I56Oxide+R73SJvsfiu92zaRNqQHTHp5C7k18wqBmpP9p88Y89dpT7S7CuOPiEB+av3ywbxu0J1zxxp91+7M4bcYm/yf9VGzf+s+AuR6GT7O/rVOl96/EE+1aLuFpqoc11mtfyeW7mV8c+CyXiPbWKnZYMbn5Txsmio1+V0mLtLZBPPR5evhk7B38Bs2sGhjUxnObaYg1E+ZWaq+vtfJs2X3AnNMaF23wEPHFu7aH2jnm+mUs33IRQYzzgxfWYylebc/3OgEr8XxST9ZYr/1gkMuXs/aN41hMaTu/RZ0E7QRPXBS5e8tSiX3S10n51KlzLnuIJ7elOFMexXbE2vgpc6ZDuPTdwuufNlaKvLcl+vHJavY3c3Fwp2YZqwbs2mh1afocyJw5jzhO3vDymFyTvf/ybNmvYudRgFiFD+M9+w80thX9ErZvPNi7+FVqn6V4VZ+jeebxjHMZ62GN9dorK5p9J/O/cZyKoS5QaVopIjkotcWcIgccvIWcSfEe08UDEYsPcpC4joWWttJP6J5D3xivkst5LIJtSatx3thffrZycXCbZpXrm0/Q/TY1E+OofY62Jj7Q27JfxH2IOOMd+Zc2fS8W7HURhrHHtW/3swWux8q66nu+06lnEs/KvGmOsx7WWK+9Msnlixl/44iLaAiTF1h0HAs82bRQKHVDAaMYBKVdCjZN3xcQPndtTRz5k5KL9jb+3m9Acj7GLui32L/mAjSx/kbNgOubL9EeMkrN9OPgWeYoOm5bnc+yH8x0BOZ5iDbgwxnvkk5iM/Q/9FNyMn1LX3jBUGstcl6PcbyjPd/phCzEs6RToK2nhDXWa68Mcvlypr+qOokHSFsUshO0jpEC0gt9nVSEzXohv+oQVPwgMdewGVW/zVjI2fLp6G9v5hE3aYZYNWDWRkud36iZftOeNnHC0uuajsA0D9EGNPXGO/WfuJSf4fs0hxrj2npUX0b/g04nYCmeT3SyxnrtB3Yu347zj+M72NPhFIVsDiLsryz8FcTPcWhnwpzpvzdkPmizYongs9ZmvSUlauF0YyW+8qYU5y9toBFi9k8x6Lk4uUUzwPIx9J2JfbLdrBkcm3Q9dUNdEcvuYZqH2HCtnPFa/p9PwyeA+mmYvltd5LA91be1HiOf6voVpK+h00o803UINHosjPXaD8SGufw7LFwcol94244LKm3la3D4YIHIomd7Mcdx2D98RgfzkLiI4AsPgqYNY+9zaZ+lMOOYGnA7h9ghL/x1Rjs2HQzx+bG9t+aNq9UsTTXob+ZygTs0Q5QaiKh2TRcJa1AzGPPhCP3gJrbsH2DlF5H5unlc8QY0/90a1nl1/UyM2Bu9mxjTmg/XQ/E53/O9TnUuYRZPelyvp7WxAa890ufy76BcHOSXkzf/5UuTEEL+IHhx3EZ4Ozm/shBCyF8HL44bKL/e4b1BCPkGeHEQQghxwYuDEEKIC14chBBCXPDiIIQQ4oIXByGEEBe8OAghhDh4v/8Dm7Xv1oHx9LYAAAAASUVORK5CYII=" InformativeScreenshot="1cdbdc7016572535b25571202a0befae.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable DesignTimeRectangle="747, 494, 88, 26" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' check:text='unchecked' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE7SURBVGhD7ZXLscMgDEXpiW5USXa0QitU8dbuwB0olrENImTytYa8uYszHiHsxRG+uHmeGdgB4cZAuDFKuLv8gRNQjlXR2Qw+RzlWxbZhmibwBSDcGAg3BsKNgXBjfkJ4JMeOYrMemZznkOq1O6TA/tm9JzO+cJHlicm3wl4QPhDDC0/Bsw/peJYehJ9A4rCf7PWkB05HbxMeJS6WyFkoA8k9Ir+sE0c1nLa3f8+GsYUryZX8tRZxi+i9r3I699oB9Hu2DC28jRGpy+VZS8zI5Uqx12uF6/csGVh4PokSFZo9Blpx8gdA+PtEKnFx0EqtomGNlHvDgPCHSDz0crbEShaXL798+vMgBAgHG8MK17l9S++dX2BY4f8VCDcGwo2BcGOeFg6+i3Ksis5m8DnKcV2A84FwYyDclJmvVP+ysZ6eeMwAAAAASUVORK5CYII=" InformativeScreenshot="5c4f9226c28cb8e3855b2f82bda63123.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </uix:NApplicationCard.Body>
+                                        <uix:NApplicationCard.TargetApp>
+                                          <uix:TargetApp Area="0, 0, 960, 540" FilePath="C:\Program Files\Google\Chrome\Application\chrome.exe" IconBase64="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" InformativeScreenshot="db675bf2d093493c3934227273a114bb.png" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir'/&gt;" />
+                                        </uix:NApplicationCard.TargetApp>
+                                      </uix:NApplicationCard>
+                                    </TryCatch.Try>
+                                    <TryCatch.Catches>
+                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ActivityAction x:TypeArguments="s:Exception">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                          </ActivityAction.Argument>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[SystemException]" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </Catch>
+                                    </TryCatch.Catches>
+                                  </TryCatch>
+                                </Sequence>
+                                <FlowStep.Next>
+                                  <FlowStep x:Name="__ReferenceID8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">0,1297</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">100,1363 100,1467</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="tipo de documento" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="472,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,804" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                                        <TryCatch.Try>
+                                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: PROJUDI - TJBA" sap:VirtualizedContainerService.HintSize="434,577" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="Simulate" Version="V1">
+                                            <uix:NApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="x:Object">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,361" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NSelectItem DisplayName="Select Item 'Selecione o'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Petição">
+                                                    <uix:NSelectItem.Items>
+                                                      <scg:List x:TypeArguments="x:String" Capacity="9">
+                                                        <x:String>Selecione o Tipo de Documento</x:String>
+                                                        <x:String>Comprovante Residência</x:String>
+                                                        <x:String>Contestação</x:String>
+                                                        <x:String>Outros</x:String>
+                                                        <x:String>Petição</x:String>
+                                                        <x:String>Petição Inicial</x:String>
+                                                        <x:String>Procuração</x:String>
+                                                        <x:String>Substabelecimento</x:String>
+                                                        <x:String>Tomada de Termo</x:String>
+                                                      </scg:List>
+                                                    </uix:NSelectItem.Items>
+                                                    <uix:NSelectItem.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/movimentacao/Peticionar?numeroProcesso=3220213594347&amp;ehPeticionar=s" DesignTimeRectangle="1159, 820, 183, 16" ElementType="DropDown" FriendlyName="'Selecione o'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='SELECT' type='' aaname='' /&gt;" InformativeScreenshot="aeb54343ef180686d2bb39e13c9ed6f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </uix:NSelectItem.Target>
+                                                  </uix:NSelectItem>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </uix:NApplicationCard.Body>
+                                            <uix:NApplicationCard.TargetApp>
+                                              <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ZbZjtowFIZ5pD5gKw37Fghb2PfthbjpXEzFDSoIJCSkssMZ/0kcMsETOKPetZZ+JSDh77Oxjx3431RtNBoRMhwOaTAYUL/fp16vT91ej7rdLnU6HWq329RqtanZalGj2aR6o0H1eoNqtTq+W+u6/s3ujt8Av1wudzm7c/bmTNfrlcbjMU2nUwh9XQIjB/B0OtEROcoc6SBzsJ578bRyMCUgsNls6O3tF1Vrta9JYNpVAg4c7z4C6/WaVqsV/Xx9pXKlypfAfw4BE64SANwB3wssl0taLBY0m81oMpmQYZTXdtfPNSw4R8CG302/C+wV0DTtQ3KFAtldP9ew2k0BB+4z/fubAN7nYuS/5zJzMRsryuXzTAGx1aTADeyCm0B3IGEJ7NzZ7cU6OpOeYwpgn2OrPYQLiCOAdzd8v3cEsnqOJ4AiYwlgBm5gM0LmNmr59MItga0tkMnqPAFUOBQXNRifJdwWEEDV6KWAls3yBFBezRnwgM0A5nxWwS0BwKVAOpPhCaC2YwbuwIgE+8Dl6B0BjSmAgwV72oG4RRhwKZBKa0wBcap9nAEb6gsX8cAtgRMlU2meAI5UZwY8UCVYMXIZVNNEKsUTEKeYJSA69wcjn8O3250pEE8yBSrVKp2EgBrojj/8jy0QSyR5AuVK5YGABX4EdwTiCZ6AUfYKCJiMAHwKRlxwKRCNxZkCRtncPhL2EGrHDXYLRGIxnkDJMEwBFUQZBVgGAuEoU6BYKj0noAB6A4FQJMoTKBT9BHZPgWUgEAxHeAL5QtGsYBLGAXpjCoTCPAHc4fBDVYfcoJ8XtoC4w+GHfys/giGeAO5wuEbhJoPLBM5zHKk41XCwoLajvKLCochgn2OrYbVjweE/x7Rj5IB/fwnyBP6hFgi8AwRoYggdfvh1AAAAAElFTkSuQmCC" InformativeScreenshot="02c1b33c1e0c7e9e2f03a463ea662318.png" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA'/&gt;" Url="https://projudi.tjba.jus.br/projudi/" />
+                                            </uix:NApplicationCard.TargetApp>
+                                          </uix:NApplicationCard>
+                                        </TryCatch.Try>
+                                        <TryCatch.Catches>
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="s:Exception">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                              </ActivityAction.Argument>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[SystemException]" />
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </Catch>
+                                        </TryCatch.Catches>
+                                      </TryCatch>
+                                    </Sequence>
+                                    <FlowStep.Next>
+                                      <FlowStep x:Name="__ReferenceID4">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <av:Point x:Key="ShapeLocation">0,1467</av:Point>
+                                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">100,1533 100,1657</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence DisplayName="inserir senha" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,514" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                            <TryCatch.Try>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="376,298" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  senha'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_4" SecureText="[projudisenha]">
+                                                  <ui:TypeSecureText.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2f71b7d-3e8a-4758-ab38-de8b7a084603" InformativeScreenshot="3c8fc99e8343fa22ba6e17d5002c0663" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:TypeSecureText.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:TypeSecureText>
+                                                <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                              </Sequence>
+                                            </TryCatch.Try>
+                                            <TryCatch.Catches>
+                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ActivityAction x:TypeArguments="s:Exception">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[SystemException]" />
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </Catch>
+                                            </TryCatch.Catches>
+                                          </TryCatch>
+                                        </Sequence>
+                                        <FlowStep.Next>
+                                          <FlowStep x:Name="__ReferenceID7">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">0,1657</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="clicar em inserir" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="472,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,804" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                                                <TryCatch.Try>
+                                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: PROJUDI - TJBA" sap:VirtualizedContainerService.HintSize="434,577" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="Simulate" Version="V1">
+                                                    <uix:NApplicationCard.Body>
+                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,361" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://projudi.tjba.jus.br/projudi/movimentacao/Peticionar?numeroProcesso=3220213594347&amp;ehPeticionar=s" DesignTimeRectangle="914, 942, 60, 21" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='divAssin' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='PaginaPrincipal.jsp' tag='FRAME' /&gt;&lt;webctrl id='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl parentid='divAssin' tag='IMG' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFASURBVFhH7ZWxDcIwEEUZhAmYgA2YgAmYIBswARMwQRoqCmioEBKKREVDQ4FoKJFoaAzP0pcMmALLIIXcSV9O7tuO/XxJWq7hYQCqqnKobLcbJe3bABgAA2AAagFg0e9H86nKBuC0Wrl5rxf1cmkzHPpfFm3MT1E2AETu03nWpNNx29HItzE/RdkBLAcDty9Lv1Cq4jibPVSG8mja7focPmPI4ZNjnt147FvlmZ/rd76e8Ym+AoDQgi+Hg4dAH0qXe/Ujx2lez2cPQP0Zi08ehQAIxsV8reUTZQcQLhKxsPDUCDar09d7jcdYVYLmCcs9nDvmp+inABA+9wTX+ASttC6Kl3k0VrmYn6KfAtCpI5U67z/Bycuj318CYJMKvgsqX8ofIAo+brUDUFcZAANgAAyAATAAdwD+p9rgaDgA527+ZxT7px60wwAAAABJRU5ErkJggg==" InformativeScreenshot="c126b6651e0305ab8d79ee03d25238b3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='PROJUDI - TJBA' /&gt;" SearchSteps="FuzzySelector, Image" />
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </uix:NApplicationCard.Body>
+                                                    <uix:NApplicationCard.TargetApp>
+                                                      <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKnSURBVFhH7ZbZjtowFIZ5pD5gKw37Fghb2PfthbjpXEzFDSoIJCSkssMZ/0kcMsETOKPetZZ+JSDh77Oxjx3431RtNBoRMhwOaTAYUL/fp16vT91ej7rdLnU6HWq329RqtanZalGj2aR6o0H1eoNqtTq+W+u6/s3ujt8Av1wudzm7c/bmTNfrlcbjMU2nUwh9XQIjB/B0OtEROcoc6SBzsJ578bRyMCUgsNls6O3tF1Vrta9JYNpVAg4c7z4C6/WaVqsV/Xx9pXKlypfAfw4BE64SANwB3wssl0taLBY0m81oMpmQYZTXdtfPNSw4R8CG302/C+wV0DTtQ3KFAtldP9ew2k0BB+4z/fubAN7nYuS/5zJzMRsryuXzTAGx1aTADeyCm0B3IGEJ7NzZ7cU6OpOeYwpgn2OrPYQLiCOAdzd8v3cEsnqOJ4AiYwlgBm5gM0LmNmr59MItga0tkMnqPAFUOBQXNRifJdwWEEDV6KWAls3yBFBezRnwgM0A5nxWwS0BwKVAOpPhCaC2YwbuwIgE+8Dl6B0BjSmAgwV72oG4RRhwKZBKa0wBcap9nAEb6gsX8cAtgRMlU2meAI5UZwY8UCVYMXIZVNNEKsUTEKeYJSA69wcjn8O3250pEE8yBSrVKp2EgBrojj/8jy0QSyR5AuVK5YGABX4EdwTiCZ6AUfYKCJiMAHwKRlxwKRCNxZkCRtncPhL2EGrHDXYLRGIxnkDJMEwBFUQZBVgGAuEoU6BYKj0noAB6A4FQJMoTKBT9BHZPgWUgEAxHeAL5QtGsYBLGAXpjCoTCPAHc4fBDVYfcoJ8XtoC4w+GHfys/giGeAO5wuEbhJoPLBM5zHKk41XCwoLajvKLCochgn2OrYbVjweE/x7Rj5IB/fwnyBP6hFgi8AwRoYggdfvh1AAAAAElFTkSuQmCC" InformativeScreenshot="ad61889766403a61007a4b604cbf46dc.png" Selector="&lt;html app='chrome.exe' title='PROJUDI - TJBA'/&gt;" Url="https://projudi.tjba.jus.br/projudi/" />
+                                                    </uix:NApplicationCard.TargetApp>
+                                                  </uix:NApplicationCard>
+                                                </TryCatch.Try>
+                                                <TryCatch.Catches>
+                                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ActivityAction x:TypeArguments="s:Exception">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Error" Message="[SystemException]" />
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </Catch>
+                                                </TryCatch.Catches>
+                                              </TryCatch>
+                                            </Sequence>
+                                          </FlowStep>
+                                        </FlowStep.Next>
+                                      </FlowStep>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowStep.Next>
+                          </FlowStep>
+                        </FlowStep.Next>
                       </FlowStep>
                     </FlowStep.Next>
                   </FlowStep>
@@ -749,22 +1257,16 @@
         </FlowStep.Next>
       </FlowStep>
       <x:Reference>__ReferenceID0</x:Reference>
-      <FlowDecision DisplayName="abriu" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-        <FlowDecision.Condition>
-          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NextStep = true" />
-        </FlowDecision.Condition>
+      <FlowDecision Condition="[NextStep = true]" DisplayName="abriu" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <av:Point x:Key="ShapeLocation">255,176.5</av:Point>
+            <av:Point x:Key="ShapeLocation">255,166.5</av:Point>
             <av:Size x:Key="ShapeSize">70,87</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </FlowDecision>
-      <FlowDecision DisplayName="fez login" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-        <FlowDecision.Condition>
-          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NextStep = True" />
-        </FlowDecision.Condition>
+      <FlowDecision Condition="[NextStep = True]" DisplayName="fez login" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -775,10 +1277,7 @@
       </FlowDecision>
       <x:Reference>__ReferenceID1</x:Reference>
       <x:Reference>__ReferenceID2</x:Reference>
-      <FlowDecision DisplayName="buscou" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
-        <FlowDecision.Condition>
-          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NextStep = True" />
-        </FlowDecision.Condition>
+      <FlowDecision Condition="[NextStep = True]" DisplayName="buscou" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -787,10 +1286,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </FlowDecision>
-      <FlowDecision DisplayName="extraiu" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
-        <FlowDecision.Condition>
-          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NextStep = True" />
-        </FlowDecision.Condition>
+      <FlowDecision Condition="[NextStep = True]" DisplayName="extraiu" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -800,6 +1296,23 @@
         </sap:WorkflowViewStateService.ViewState>
       </FlowDecision>
       <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
+      <FlowDecision DisplayName="peticionou" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
+        <FlowDecision.Condition>
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NextStep = True" />
+        </FlowDecision.Condition>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <av:Point x:Key="ShapeLocation">245,836.5</av:Point>
+            <av:Size x:Key="ShapeSize">70,87</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </FlowDecision>
     </Flowchart>
   </Sequence>
 </Activity>
